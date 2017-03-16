@@ -1,2 +1,3 @@
-# springbatchstudy
-Study log for Spring Batch
+# Spring Batch Study
+
+#### 목적
