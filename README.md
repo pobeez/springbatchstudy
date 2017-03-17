@@ -1,3 +1,8 @@
-# Spring Batch Study
+Spring Batch Study
+==================
 
-#### 목적
+---
+
+#### 프로젝트 목적
+
+#### 프로젝트 수행 방안
