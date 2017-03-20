@@ -11,4 +11,4 @@
 
 ### Spring sample project import
 * Github의 spring-batch 프로젝트 import
-* [spring-batch githup](https://github.com/pobeez/spring-batch)
+* [spring-batch githup](https://github.com/spring-projects/spring-batch)
