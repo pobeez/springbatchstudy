@@ -1,9 +1,22 @@
 apply plugin: 'java'
 
 def defaultEncoding = 'UTF-8'
-compileJava.options.encoding = defaultEncoding
+
+repositories {
+    // 의존관계 해결 위치로 메이븐 중앙저장소 추가
+    mavenCentral()
+}
+
+[compileJava, compileTestJava]*.options*.encoding = defaultEncoding
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
+
+
+dependencies {
+    //소스세트 test 컴파일 시에 Junit4의존관계 설정
+    testCompile "junit:junit:4.11"
+}
 
 //vscode extension을 사용하기 위한 task
 task vscodeClasspathFile {
