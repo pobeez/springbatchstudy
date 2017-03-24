@@ -1,0 +1,8 @@
+{
+    "sourcePath": [
+        "D:\\source\\git\\springbatchstudy\\gradle\\study\\ch4\\example_project\\src\\main\\java",
+        "D:\\source\\git\\springbatchstudy\\gradle\\study\\ch4\\example_project\\src\\test\\java"
+    ],
+    "classPathFile": "D:\\source\\git\\springbatchstudy\\gradle\\study\\ch4\\example_project\\build\\classpath.txt",
+    "outputDirectory": "D:\\source\\git\\springbatchstudy\\gradle\\study\\ch4\\example_project\\build\\vscode-classes"
+}
