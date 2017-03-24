@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WhenPerformingTheFourBasicArithmeticOperations$InDivision" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-03-24T07:15:37" hostname="문성진-PC" time="0.02">
+  <properties/>
+  <testcase name="shouldReturnTheQuotientOfNumbersWhichAreNumericString" classname="WhenPerformingTheFourBasicArithmeticOperations$InDivision" time="0.001"/>
+  <testcase name="shouldReturnTheQuotientOfNumbersWhichAreBigDecimal" classname="WhenPerformingTheFourBasicArithmeticOperations$InDivision" time="0.0"/>
+  <testcase name="shouldThrowExceptionWhenDivisorIsZero" classname="WhenPerformingTheFourBasicArithmeticOperations$InDivision" time="0.0"/>
+  <testcase name="shouldReturnTheQuotientOfNumbersWhichAreNumericString" classname="WhenPerformingTheFourBasicArithmeticOperations$InDivision" time="0.0"/>
+  <testcase name="shouldReturnTheQuotientOfNumbersWhichAreBigDecimal" classname="WhenPerformingTheFourBasicArithmeticOperations$InDivision" time="0.001"/>
+  <testcase name="shouldThrowExceptionWhenDivisorIsZero" classname="WhenPerformingTheFourBasicArithmeticOperations$InDivision" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
