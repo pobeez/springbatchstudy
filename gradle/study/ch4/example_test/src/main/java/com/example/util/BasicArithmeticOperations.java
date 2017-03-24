@@ -108,3 +108,19 @@ public class BasicArithmeticOperations {
   }
 
 }
+
+
+/*
+$ gradle build
+:compileJava
+:processResources NO-SOURCE
+:classes
+:jar
+:assemble
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+:check
+:build
+*/
