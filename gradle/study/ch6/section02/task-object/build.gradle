@@ -1,0 +1,28 @@
+/*task myTask << {
+    println name
+}
+
+myTask.group 'help'
+myTask.description 'myTask입니다.'
+*/
+
+task myActionTask {
+    doFirst {
+        println 'First!'
+    }
+/*    doLast {
+        println 'Last!!'
+    }*/
+}
+
+myActionTask.doLast {
+    println 'Last!'
+}
+
+myActionTask.doLast() {
+    println 'Last by leftShift!'
+}
+
+myActionTask << { println 'Last by leftShift!' }
+
+myActionTask.deleteAllActions()

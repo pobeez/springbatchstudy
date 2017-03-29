@@ -1,0 +1,13 @@
+// 그레이들 홈디렉토리 출력
+task gradleInfo {
+    doFirst {
+    println 'gradleHomeDir ' + gradle.gradleHomeDir
+    println 'gradleUserHomeDIr ' + gradle.gradleUserHomeDir
+    println 'gradleVersion ' + gradle.gradleVersion
+    println 'rootProject ' + gradle.rootProject
+    println 'startParameter ' + gradle.startParameter
+    println 'taskGraph ' + gradle.taskGraph
+    }
+
+}
+
