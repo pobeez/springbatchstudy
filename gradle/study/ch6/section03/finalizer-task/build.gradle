@@ -1,16 +1,27 @@
-task normalTask << {
-    println name
+task normalTask {
+    doLast {
+        println name
+    }
 }
 
-task finalizerTask << {
-    println name
+task finalizerTask {
+    doLast {
+        println name
+    }
 }
 
-task problemTask << {
-    throw new Exception('exception')
+task problemTask  {
+    doLast {
+        throw new Exception('exception')
+    }
+
 }
   
-task executionTask << { println name }
+task executionTask { 
+    doLast {
+        println name
+    } 
+}
 
 normalTask.finalizedBy finalizerTask
 

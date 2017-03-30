@@ -1,0 +1,20 @@
+apply plugin: 'application'
+
+mainClassName = 'com.example.cli.SimpleCalc'
+applicationName = 'SimpleCalc'
+  
+dependencies {
+    compile project(':arithmetic-lib')
+}
+  
+run {
+    standardInput = System.in
+}
+
+project(':arithmetic-lib') {
+	task show  {
+		doLast {
+			println project.name + ' show()'
+		}
+	}
+}

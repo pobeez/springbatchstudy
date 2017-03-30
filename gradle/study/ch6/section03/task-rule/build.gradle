@@ -9,10 +9,21 @@ dependencies {
     testCompile 'junit:junit:4.11'
 }
 
-tasks.addRule('Pattern: show<TASKS_NAME>: Show task name.') { taskName ->
+tasks.addRule('Pattern: show<TASK_NAME>: Show task name.') { taskName ->
   if(taskName.startsWith('show')) {
-    task(taskName) << {
-	  println '*** ' + taskName + ' ***'
-    }
+    //task(taskName) << {
+	  //println '*** ' + taskName + ' ***'
+   // }
+   task(taskName) {
+     doLast {
+       println '*** ' + taskName + ' ***'
+     }
+   }
+  }
+}
+
+task showPobeez {
+  doLast {
+    println 'Hi I\'m pobeez'
   }
 }

@@ -1,5 +1,8 @@
-task specialTask << {
-    println '특별한 처리를 실행합니다'
+task specialTask {
+    doLast {
+        println '특별한 처리를 실행합니다'
+    }
+
 }
 
 specialTask.onlyIf {
@@ -7,16 +10,29 @@ specialTask.onlyIf {
 }
 
 
-task skippedIfExceptionOccurred << {
-    println 'start'
+task skippedIfExceptionOccurred {
+    doLast {
+        println 'start'
+        if(process == 'error') {
+            println 'Error 발생'
+            throw new StopExecutionException()
+        }        
+        println 'end'
+    }
+    
 }
 
-skippedIfExceptionOccurred << {
-    if(process == 'error') {
-        throw new StopExecutionException()
+/*skippedIfExceptionOccurred {
+    doLast {
+        if(process == 'error') {
+            println 'Error 발생'
+            throw new StopExecutionException()
+        }
     }
 }
 
-skippedIfExceptionOccurred << {
-    println 'end'
-}
+skippedIfExceptionOccurred {
+    doLast {
+        println 'end'
+    }
+}*/
