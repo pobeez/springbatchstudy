@@ -1,0 +1,27 @@
+repositories {
+  mavenCentral()
+}
+
+configurations {
+  conf1
+  testConf1.extendsFrom conf1 // testConf1은 conf의 의존 관계도 포함한다
+  testConf2.extendsFrom testConf1
+}
+
+dependencies {
+  //conf1 group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.3.1'
+  conf1 'org.codehaus.groovy:groovy-all:2.3.1'
+  //testConf1 group: 'junit', name: 'junit', version: '4.11'
+  testConf1 'junit:junit:4.12'
+  testConf2 localGroovy()
+}
+
+task showDeps {
+  // groovy-all-2.3.1.jar의 경로도 출력된다
+  doLast {
+    configurations.testConf2.each {
+      println it.absolutePath
+    }
+  }
+}
+

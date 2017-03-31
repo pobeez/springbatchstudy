@@ -1,0 +1,22 @@
+//의존관계 설정
+configurations {
+  conf1
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  conf1 group: 'org.slf4j', name: 'slf4j-api', version: '1.7.5'
+  // conf1 'org.slf4j:slf4j-api:1.7.5'
+}
+
+task showDeps {
+  doLast {
+    configurations.conf1.each {
+      println it.absolutePath
+    }
+  }
+}
+

@@ -1,0 +1,16 @@
+configurations {
+  conf1
+}
+
+dependencies {
+  conf1 gradleApi()
+}
+
+task showDeps {
+  doLast {
+    configurations.conf1.each {
+      println it.absolutePath
+    }
+  }
+}
+

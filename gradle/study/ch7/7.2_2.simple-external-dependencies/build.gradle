@@ -1,0 +1,42 @@
+// 리스트2
+/*
+configurations {
+  conf1
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  conf1 'org.slf4j:slf4j-api:1.7.5'
+}
+
+task showDeps {
+  doLast {
+    configurations.conf1.each {
+      println it.absolutePath
+    }
+  }
+}
+*/
+
+configurations {
+  conf_pob
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  conf_pob 'org.slf4j:slf4j-api:1.7.5'
+}
+
+task showDeps {
+  doLast {
+    configurations.conf_pob.each {
+      println it.absolutePath
+    }
+  }
+}

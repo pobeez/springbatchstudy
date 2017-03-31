@@ -1,0 +1,17 @@
+// 리스트1
+configurations {
+  conf1
+}
+
+dependencies {
+  conf1 files("libs/sample-lib.jar", "libs/groovy-all-2.3.1.jar")
+}
+
+task showDeps {
+    doLast {
+    configurations.conf1.each {
+      println it.absolutePath
+    }
+  }
+}
+
