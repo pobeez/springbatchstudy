@@ -1,0 +1,17 @@
+[16:45:56.589 [Test worker] INFO  com.example.bean.ExampleBean - ExampleBean class loaded.
+S16:45:56.593 [Test worker] DEBUG com.example.bean.ExampleBean - setName() - start
+Q16:45:56.593 [Test worker] DEBUG com.example.bean.ExampleBean - setName() - end
+T16:45:56.593 [Test worker] DEBUG com.example.bean.ExampleBean - setValue() - start
+R16:45:56.593 [Test worker] DEBUG com.example.bean.ExampleBean - setValue() - end
+S16:45:56.599 [Test worker] DEBUG com.example.bean.ExampleBean - setName() - start
+Q16:45:56.600 [Test worker] DEBUG com.example.bean.ExampleBean - setName() - end
+T16:45:56.600 [Test worker] DEBUG com.example.bean.ExampleBean - setValue() - start
+R16:45:56.600 [Test worker] DEBUG com.example.bean.ExampleBean - setValue() - end
+S16:45:56.612 [Test worker] DEBUG com.example.bean.ExampleBean - setName() - start
+Q16:45:56.612 [Test worker] DEBUG com.example.bean.ExampleBean - setName() - end
+T16:45:56.612 [Test worker] DEBUG com.example.bean.ExampleBean - setValue() - start
+R16:45:56.612 [Test worker] DEBUG com.example.bean.ExampleBean - setValue() - end
+S16:45:56.614 [Test worker] DEBUG com.example.bean.ExampleBean - setName() - start
+Q16:45:56.614 [Test worker] DEBUG com.example.bean.ExampleBean - setName() - end
+T16:45:56.614 [Test worker] DEBUG com.example.bean.ExampleBean - setValue() - start
+R16:45:56.614 [Test worker] DEBUG com.example.bean.ExampleBean - setValue() - end

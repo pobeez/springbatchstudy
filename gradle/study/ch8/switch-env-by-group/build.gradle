@@ -1,5 +1,0 @@
-task showURL << {
-  def url = new File('config/env.conf').toURL()
-  def config = new ConfigSlurper("$env").parse(url)
-  println 'App Server: ' + config.app_url
-}

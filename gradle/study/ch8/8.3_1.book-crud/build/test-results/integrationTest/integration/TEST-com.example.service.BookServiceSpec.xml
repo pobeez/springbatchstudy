@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.service.BookServiceSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-07T07:01:06" hostname="문성진-PC" time="0.089">
+  <properties/>
+  <testcase name="書籍を登録できること" classname="com.example.service.BookServiceSpec" time="0.047"/>
+  <testcase name="書籍のタイトルを変更できること" classname="com.example.service.BookServiceSpec" time="0.033"/>
+  <testcase name="書籍を削除できること" classname="com.example.service.BookServiceSpec" time="0.008"/>
+  <system-out><![CDATA[04-07 16:01:06 database: connecting session #9 to mem:testdb
+04-07 16:01:06 jdbc[9]: 
+/*SQL */SET MODE PostgreSQL;
+04-07 16:01:06 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+04-07 16:01:06 jdbc[9]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+04-07 16:01:06 jdbc[9]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:mem:testdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;TRACE_LEVEL_SYSTEM_OUT=2", "\ubb38\uc131\uc9c4", "");
+04-07 16:01:06 jdbc[9]: 
+/*SQL l:43 #:1*/INSERT INTO book(title, isbn) VALUES (?, ?) {1: STRINGDECODE('Gradle\\u5fb9\\u5e95\\u5165\\u9580'), 2: '9784798199999'};
+04-07 16:01:06 jdbc[9]: 
+/*SQL l:116 #:1*/SELECT \n\t        b.id as id, b.title as title, b.isbn as isbn\n\t    FROM\n\t        book b\n\t    WHERE\n\t        b.id = ? {1: 4};
+04-07 16:01:06 jdbc[9]: 
+/*SQL #:1*/CALL DATABASE();
+04-07 16:01:06 jdbc[9]: 
+/*SQL */ROLLBACK;
+04-07 16:01:06 jdbc[9]: 
+/*SQL */COMMIT;
+04-07 16:01:06 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+04-07 16:01:06 database: disconnecting session #9
+04-07 16:01:06 database: connecting session #10 to mem:testdb
+04-07 16:01:06 jdbc[10]: 
+/*SQL */SET MODE PostgreSQL;
+04-07 16:01:06 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+04-07 16:01:06 jdbc[10]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+04-07 16:01:06 jdbc[10]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:mem:testdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;TRACE_LEVEL_SYSTEM_OUT=2", "\ubb38\uc131\uc9c4", "");
+04-07 16:01:06 jdbc[10]: 
+/*SQL l:116 #:1 t:1*/SELECT \n\t        b.id as id, b.title as title, b.isbn as isbn\n\t    FROM\n\t        book b\n\t    WHERE\n\t        b.id = ? {1: 1};
+04-07 16:01:06 jdbc[10]: 
+/*SQL #:1*/CALL DATABASE();
+04-07 16:01:06 jdbc[10]: 
+/*SQL l:38 #:1 t:1*/UPDATE book SET title = ? WHERE id = ? {1: STRINGDECODE('Grails\\u5fb9\\u5e95\\u5165\\u9580 \\u7b2c2\\u7248'), 2: 1};
+04-07 16:01:06 jdbc[10]: 
+/*SQL l:116 #:1*/SELECT \n\t        b.id as id, b.title as title, b.isbn as isbn\n\t    FROM\n\t        book b\n\t    WHERE\n\t        b.id = ? {1: 1};
+04-07 16:01:06 jdbc[10]: 
+/*SQL */ROLLBACK;
+04-07 16:01:06 jdbc[10]: 
+/*SQL */COMMIT;
+04-07 16:01:06 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+04-07 16:01:06 database: disconnecting session #10
+04-07 16:01:06 database: connecting session #11 to mem:testdb
+04-07 16:01:06 jdbc[11]: 
+/*SQL */SET MODE PostgreSQL;
+04-07 16:01:06 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+04-07 16:01:06 jdbc[11]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+04-07 16:01:06 jdbc[11]: 
+/**/Connection conn10 = DriverManager.getConnection("jdbc:h2:mem:testdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;TRACE_LEVEL_SYSTEM_OUT=2", "\ubb38\uc131\uc9c4", "");
+04-07 16:01:06 jdbc[11]: 
+/*SQL #:3*/SELECT \n\t        b.id as id, b.title as title, b.isbn as isbn\n\t    FROM\n\t        book b\n\t    ORDER BY\n\t        b.id;
+04-07 16:01:06 jdbc[11]: 
+/*SQL #:1*/CALL DATABASE();
+04-07 16:01:06 jdbc[11]: 
+/*SQL l:29 #:1*/DELETE FROM book WHERE id = ? {1: 1};
+04-07 16:01:06 jdbc[11]: 
+/*SQL #:2*/SELECT \n\t        b.id as id, b.title as title, b.isbn as isbn\n\t    FROM\n\t        book b\n\t    ORDER BY\n\t        b.id;
+04-07 16:01:06 jdbc[11]: 
+/*SQL */ROLLBACK;
+04-07 16:01:06 jdbc[11]: 
+/*SQL */COMMIT;
+04-07 16:01:06 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+04-07 16:01:06 database: disconnecting session #11
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

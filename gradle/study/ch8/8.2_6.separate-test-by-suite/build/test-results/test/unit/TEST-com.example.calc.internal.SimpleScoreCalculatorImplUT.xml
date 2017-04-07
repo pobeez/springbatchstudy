@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.calc.internal.SimpleScoreCalculatorImplUT" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-07T05:57:35" hostname="문성진-PC" time="0.002">
+  <properties/>
+  <testcase name="when_20pu_4han_then_score_is_5200" classname="com.example.calc.internal.SimpleScoreCalculatorImplUT" time="0.002"/>
+  <testcase name="when_30pu_3han_then_score_is_3900" classname="com.example.calc.internal.SimpleScoreCalculatorImplUT" time="0.0"/>
+  <system-out><![CDATA[created
+created
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

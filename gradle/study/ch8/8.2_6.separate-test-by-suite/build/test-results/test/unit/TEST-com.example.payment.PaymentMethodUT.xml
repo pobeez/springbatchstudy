@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.payment.PaymentMethodUT" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-07T05:57:35" hostname="문성진-PC" time="0.205">
+  <properties/>
+  <testcase name="when_tsumo_is_true_then_payment_is_taken_map" classname="com.example.payment.PaymentMethodUT" time="0.001"/>
+  <testcase name="when_tsumo_is_false_then_payment_is_created_new" classname="com.example.payment.PaymentMethodUT" time="0.203"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.payment.PaymentReceiptUT" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-07T05:57:35" hostname="문성진-PC" time="0.032">
+  <properties/>
+  <testcase name="when_score_is_1000_and_tsumo_is_ture_then_payment_is_500_300" classname="com.example.payment.PaymentReceiptUT" time="0.03"/>
+  <testcase name="when_score_is_1000_tsumo_is_false_then_payment_receipt_is_1000" classname="com.example.payment.PaymentReceiptUT" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
