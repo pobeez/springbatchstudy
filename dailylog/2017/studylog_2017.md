@@ -56,3 +56,20 @@
     * 10장: 통합개발환경과의 연계
     * 11장 이후는 추후 케이브 발생 시 참조하는것으로 마침
     * Spring Batch 개발 환경 구축.
+* __2017/04/17__ `[11:00 ~ 14:36]`
+    * Spring Batch workspace directory 설정
+    * workspace Java build path 설정
+    * `build.gradle`에 dependency 추가
+       ```gradle
+        	// 2017/04/17 추가
+	        compile 'org.apache.commons:commons-compress:1.13'
+	        compile 'commons-logging:commons-logging:1.2'
+	        compile 'commons-dbcp:commons-dbcp:1.4'
+	        compile 'commons-pool:commons-pool:1.6'
+	        compile 'commons-io:commons-io:2.5'
+	        compile 'commons-collections:commons-collections:3.2.2'
+	        compile 'org.springframework:spring-context:4.3.7.RELEASE'
+	        compile 'org.quartz-scheduler:quartz:2.2.3'
+      ```
+* __2017/04/18__ `[ ~ ]`
+    * Spring Batch 개발을 위한 환경 설정
